@@ -22,10 +22,9 @@ public class SetupDb {
 
     void createTables() {
 
-        DBManager dbmgr = new DBManager();
+        DBManager dmbgr = new DBManager();
 
-        Connection con = dbmgr.getConnection();
-        Connection conn = dbmgr.getConnection();
+        Connection con = dmbgr.getConnection();
 
         InputStream inpStr = this.getClass().getResourceAsStream("createdb.txt");
 
@@ -34,9 +33,9 @@ public class SetupDb {
 
     void insertSetupData() {
 
-        DBManager dbmgr = new DBManager();
+        DBManager dmbgr = new DBManager();
 
-        Connection con = dbmgr.getConnection();
+        Connection con = dmbgr.getConnection();
         
         InputStream inpStr = this.getClass().getResourceAsStream("insertdata.txt");
 
@@ -47,9 +46,9 @@ public class SetupDb {
 
         Statement stmt;
 
-        DBManager dbmgr = new DBManager();
+        DBManager dmbgr = new DBManager();
 
-        Connection con = dbmgr.getConnection();
+        Connection con = dmbgr.getConnection();
 
         try {
             stmt = con.createStatement();
@@ -81,9 +80,10 @@ public class SetupDb {
             while (results.next()) {
                 int id = results.getInt(1);
                 String name = results.getString(2);
-                String description = results.getString(3);
-                
-                logger.info(id + "\t\t" + name + "\t\t" + description);
+                String genre = results.getString(3);
+                String artist = results.getString(4);
+                String description = results.getString(5);
+                logger.info(id + "\t\t" + name + "\t\t" + genre + "\t\t" + artist + "\t\t"+ description);
             }
             results.close();
             stmt.close();

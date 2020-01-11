@@ -92,78 +92,76 @@
                 <div class="span9">
                     <div class="hero-unit">
 
-                      
-                        <h1>User Management</h1>
-                        <p>This is where admin users manage their products</p>
-                        <p><a href="<c:url value='/ProductManagement?action=addInit' />" class="btn btn-primary btn-large">Add New Product&raquo;</a></p>
-                        <p><table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Product Name</th>
-                                    <th>Description</th>
-                                    
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <c:forEach items="${RKALLUSERS}" var="tempuser">    
-                                    <tr>
-                                        <td scope="row"><c:out value="${tempuser.getId()}"/></td>
-                                        <td>${tempuser.firstName}"</td>
-                                        <td>${tempuser.lastName}"</td>
-                                        <td>${tempuser.email}"</td>
-                                        <td><a> link to edit </a> </td>
-                                    </tr>
-                                </c:forEach>
-
-                            </tbody>
-                        </table>
                     </div>
+                    <c:url var="postUrl" value="/ProductManagement">
+                        <c:param name="action" value="add"/>
+                    </c:url>
+        
+                    <form action="${postUrl}" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="name" name="NAME" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description:</label>
+                            <input type="description" name="DESCRIPTION"class="form-control" id="description">
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <br/>
 
-                    <div class="row-fluid">
-                        <div class="span4">
-                            <h2>Heading</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p><a class="btn" href="#">View details &raquo;</a></p>
-                        </div><!--/span-->
-                        <div class="span4">
-                            <h2>Heading</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p><a class="btn" href="#">View details &raquo;</a></p>
-                        </div><!--/span-->
-                        <div class="span4">
-                            <h2>Heading</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p><a class="btn" href="#">View details &raquo;</a></p>
-                        </div><!--/span-->
-                    </div><!--/row-->
+                    <!-- /.row -->
+
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn" href="#">View details &raquo;</a></p>
+                </div><!--/span-->
+                <div class="span4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn" href="#">View details &raquo;</a></p>
+                </div><!--/span-->
+                <div class="span4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn" href="#">View details &raquo;</a></p>
                 </div><!--/span-->
             </div><!--/row-->
+        </div><!--/span-->
+    </div><!--/row-->
 
-            <hr>
+    <hr>
 
-            <footer>
-                <p>&copy; Company 2013</p>
-            </footer>
+    <footer>
+        <p>&copy; Company 2013</p>
+    </footer>
 
-        </div><!--/.fluid-container-->
+</div><!--/.fluid-container-->
 
-        <!-- Le javascript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <!--<script src="../assets/js/jquery.js"></script>
-        <script src="../assets/js/bootstrap-transition.js"></script>
-        <script src="../assets/js/bootstrap-alert.js"></script>
-        <script src="../assets/js/bootstrap-modal.js"></script>
-        <script src="../assets/js/bootstrap-dropdown.js"></script>
-        <script src="../assets/js/bootstrap-scrollspy.js"></script>
-        <script src="../assets/js/bootstrap-tab.js"></script>
-        <script src="../assets/js/bootstrap-tooltip.js"></script>
-        <script src="../assets/js/bootstrap-popover.js"></script>
-        <script src="../assets/js/bootstrap-button.js"></script>
-        <script src="../assets/js/bootstrap-collapse.js"></script>
-        <script src="../assets/js/bootstrap-carousel.js"></script>
-        <script src="../assets/js/bootstrap-typeahead.js"></script> -->
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/bootstrap-transition.js"></script>
+<script src="../assets/js/bootstrap-alert.js"></script>
+<script src="../assets/js/bootstrap-modal.js"></script>
+<script src="../assets/js/bootstrap-dropdown.js"></script>
+<script src="../assets/js/bootstrap-scrollspy.js"></script>
+<script src="../assets/js/bootstrap-tab.js"></script>
+<script src="../assets/js/bootstrap-tooltip.js"></script>
+<script src="../assets/js/bootstrap-popover.js"></script>
+<script src="../assets/js/bootstrap-button.js"></script>
+<script src="../assets/js/bootstrap-collapse.js"></script>
+<script src="../assets/js/bootstrap-carousel.js"></script>
+<script src="../assets/js/bootstrap-typeahead.js"></script> -->
 
-    </body>
+</body>
 </html>

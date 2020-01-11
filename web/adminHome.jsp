@@ -79,7 +79,7 @@
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
               <li class="nav-header">Product Tasks</li>
-              <li><a href="#">Link</a></li>
+              <li class="active"><a href="/BootStrapLogin/ProductManagement?action=List">Product Management</a></li>
               <li><a href="#">Link</a></li>
               <li class="nav-header">Test Stuff</li>
               <li><a href="/BootStrapLogin/TestPage">Test Page 1</a></li>

@@ -33,8 +33,6 @@
         <servlet-name>UserManagementServlet</servlet-name>
         <url-pattern>/UserManagement</url-pattern>
     </servlet-mapping>
-<servlet-mapping>
-       
     <servlet-mapping>
         <servlet-name>SearchServlet</servlet-name>
         <url-pattern>/SearchServlet</url-pattern>
