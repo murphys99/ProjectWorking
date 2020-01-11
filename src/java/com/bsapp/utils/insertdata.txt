@@ -1,0 +1,47 @@
+INSERT INTO USERDATA(EMAIL,PASSWORD,FNAME,LNAME,USERTYPE)
+VALUES('admin@admin.com', 'mypassword', 'System', 'Administrator','ADMIN');
+
+INSERT INTO USERDATA(EMAIL,PASSWORD,FNAME,LNAME,USERTYPE)
+VALUES('user1@user.com', 'mypassword', 'General1', 'User','GENUSER');
+
+INSERT INTO USERDATA(EMAIL,PASSWORD,FNAME,LNAME,USERTYPE)
+VALUES('user2@user.com', 'mypassword', 'General2', 'User','GENUSER');
+
+INSERT INTO USERDATA(EMAIL,PASSWORD,FNAME,LNAME,USERTYPE)
+VALUES('user3@user.com', 'mypassword', 'General3', 'User','GENUSER');
+
+INSERT INTO USERDATA(EMAIL,PASSWORD,FNAME,LNAME,USERTYPE)
+VALUES('user4@user.com', 'mypassword', 'General4', 'User','GENUSER');
+
+INSERT INTO PRODUCTDATA(NAME,DESCRIPTION,)
+VALUES('Hurley', 'Torpey');
+
+INSERT INTO PRODUCTDATA(NAME,DESCRIPTION,)
+VALUES('Hurley', 'Fitz');
+
+INSERT INTO PRODUCTDATA(NAME,DESCRIPTION,)
+VALUES('Hurley', 'Torpey');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
